@@ -72,7 +72,7 @@ body.on h1 span{transform:none}
 /* marquee */
 .mq{overflow:hidden;border-block:1px solid rgba(239,230,210,.3);background:rgba(5,6,26,.55);padding:14px 0}
 .mq div{display:flex;white-space:nowrap;width:max-content;font:400 clamp(2rem,5vw,4rem)/1 var(--d);text-transform:uppercase;will-change:transform}
-.mq em{font-style:normal;color:var(--cyan);padding:0 .6em}.mq .o{-webkit-text-stroke:1px var(--cream);color:transparent}
+.mq em{font-style:normal;color:var(--cyan);padding:0 .6em}.mq .o{-kit-text-stroke:1px var(--cream);color:transparent}
 /* paper */
 .paper{background:var(--paper);color:var(--navy);padding:clamp(80px,13vw,170px) clamp(18px,5vw,70px)}
 .paper .m{color:#5a5878}.paper .in{max-width:1100px;margin:0 auto}
@@ -274,7 +274,7 @@ pre{white-space:pre-wrap;word-break:break-word;background:rgba(5,6,26,.7);border
     &lt;div class=&quot;row&quot;&gt;
       &lt;label class=&quot;f&quot;&gt;&lt;span&gt;Branch &lt;i&gt;*&lt;/i&gt;&lt;/span&gt;&lt;input type=&quot;text&quot; id=&quot;branch&quot; placeholder=&quot;e.g. CSE, ECE, ME&quot; required&gt;&lt;div class=&quot;err&quot;&gt;&lt;/div&gt;&lt;/label&gt;
       &lt;label class=&quot;f&quot;&gt;&lt;span&gt;Year &lt;i&gt;*&lt;/i&gt;&lt;/span&gt;
-        &lt;select id=&quot;year&quot; required&gt;&lt;option value=&quot;&quot;&gt;Select year&lt;/option&gt;&lt;option&gt;1st year&lt;/option&gt;&lt;option&gt;2nd year&lt;/option&gt;&lt;option&gt;3rd year&lt;/option&gt;&lt;option&gt;4th year&lt;/option&gt;&lt;/select&gt;&lt;div class=&quot;err&quot;&gt;&lt;/div&gt;&lt;/label&gt;
+        &lt;select id=&quot;year&quot; required&gt;&lt;option value=&quot;&quot;&gt;Select year&lt;/option&gt;&lt;option&gt;2nd year&lt;/option&gt;&lt;option&gt;3rd year&lt;/option&gt;&lt;/select&gt;&lt;div class=&quot;err&quot;&gt;&lt;/div&gt;&lt;/label&gt;
     &lt;/div&gt;
     &lt;fieldset id=&quot;dom&quot;&gt;
       &lt;legend&gt;Where would you fit? Pick one or more &lt;i style=&quot;color:var(--mag);font-style:normal&quot;&gt;*&lt;/i&gt;&lt;/legend&gt;
@@ -302,7 +302,7 @@ pre{white-space:pre-wrap;word-break:break-word;background:rgba(5,6,26,.7);border
 var SPIC_EMAIL=&#x27;spic@example.com&#x27;; /* only used if no Google Sheet is connected */
 var SHEET_URL=&#x27;&#x27;;try{SHEET_URL=(parent!==window&amp;&amp;parent.SPIC_SHEET_URL)||&#x27;&#x27;}catch(e){}SHEET_URL=SHEET_URL||window.SPIC_SHEET_URL||&#x27;&#x27;;
 var $=function(s){return document.querySelector(s)};
-var DOM=[&#x27;AI / ML&#x27;,&#x27;Web&#x27;,&#x27;App development&#x27;,&#x27;Cybersecurity&#x27;,&#x27;Design &amp; UI / UX&#x27;,&#x27;Research&#x27;,&#x27;Startups&#x27;,&#x27;Content &amp; media&#x27;,&#x27;Events&#x27;,&#x27;Not sure yet&#x27;];
+var DOM=[&#x27;Technical&#x27;,&#x27;Club Outreach&#x27;,&#x27;Documentation&#x27;,&#x27;Social Media&#x27;,&#x27; Designing &amp; Editing&#x27;,&#x27;External Collaboration&#x27;,&#x27;Startups&#x27;,&#x27;Management&#x27;,&#x27;Events&#x27;,&#x27;Not sure yet&#x27;];
 $(&#x27;#chips&#x27;).innerHTML=DOM.map(function(d,i){return &#x27;&lt;input type=&quot;checkbox&quot; id=&quot;d&#x27;+i+&#x27;&quot; value=&quot;&#x27;+d.replace(/&quot;/g,&#x27;&amp;quot;&#x27;)+&#x27;&quot;&gt;&lt;label for=&quot;d&#x27;+i+&#x27;&quot;&gt;&#x27;+d.replace(/&amp;/g,&#x27;&amp;amp;&#x27;)+&#x27;&lt;/label&gt;&#x27;}).join(&#x27;&#x27;);
 function v(id){return $(&#x27;#&#x27;+id).value.trim()}
 function bad(el,msg){el.classList.add(&#x27;bad&#x27;);var e=el.closest(&#x27;label&#x27;)&amp;&amp;el.closest(&#x27;label&#x27;).querySelector(&#x27;.err&#x27;);if(e)e.textContent=msg}
