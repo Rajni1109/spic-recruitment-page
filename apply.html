@@ -112,7 +112,7 @@ pre{white-space:pre-wrap;word-break:break-word;background:rgba(5,6,26,.7);border
 var SHEET_URL=''; /* PASTE your Google Apps Script Web app URL between these quotes (it ends with /exec) */
 try{SHEET_URL=SHEET_URL||(parent!==window&&parent.SPIC_SHEET_URL)||''}catch(e){}SHEET_URL=SHEET_URL||window.SPIC_SHEET_URL||'';
 var $=function(s){return document.querySelector(s)};
-var DOM=['AI / ML','Web','App development','Cybersecurity','Design & UI / UX','Research','Startups','Content & media','Events','Not sure yet'];
+var DOM=['Technical','Club Outreach','Documentation','Designing and Editing','External Collaboration','Startups','social media','Management','Not sure yet'];
 $('#chips').innerHTML=DOM.map(function(d,i){return '<input type="checkbox" id="d'+i+'" value="'+d.replace(/"/g,'&quot;')+'"><label for="d'+i+'">'+d.replace(/&/g,'&amp;')+'</label>'}).join('');
 function v(id){return $('#'+id).value.trim()}
 function bad(el,msg){el.classList.add('bad');var e=el.closest('label')&&el.closest('label').querySelector('.err');if(e)e.textContent=msg}
