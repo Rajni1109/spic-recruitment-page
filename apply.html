@@ -80,9 +80,9 @@ pre{white-space:pre-wrap;word-break:break-word;background:rgba(5,6,26,.7);border
     </div>
     <fieldset id="dom">
       <legend>Where would you fit? Pick one or more <i style="color:var(--mag);font-style:normal">*</i></legend>
-      <div class="chips" id="chips"></div><div class="err" id="derr"></div>
+      <div class="chips" id="chips"></div>club outreach<div class="err" id="derr"></div>
     </fieldset>
-    <label class="f"><span>What would you like to build or change? <i>*</i></span><textarea id="idea" placeholder="One idea, however rough. A problem you've noticed, a thing you want to make." required></textarea><div class="err"></div></label>
+    <label class="f"><span>What would you like to say about your work Experience? <i>*</i></span><textarea id="idea" placeholder="One idea, however rough. A problem you've noticed, a thing you want to make." required></textarea><div class="err"></div></label>
     <label class="f"><span>Why SPIC?</span><textarea id="why" style="min-height:90px"></textarea></label>
     <label class="f"><span>Link to your work (GitHub, portfolio, designs)</span><input type="url" id="link" placeholder="https://"></label>
     <input type="text" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
@@ -109,7 +109,7 @@ pre{white-space:pre-wrap;word-break:break-word;background:rgba(5,6,26,.7);border
 
 <script>
 (function(){
-var SHEET_URL=''; /* PASTE your Google Apps Script Web app URL between these quotes (it ends with /exec) */
+var SHEET_URL='https://script.google.com/macros/s/AKfycbxOOAlYJrOahwZVuJhXiTK9bh7YOrTAK8O9Et5x5608QnqULl80s9k36hxpXYdHCkSK/exec'; /* PASTE your Google Apps Script Web app URL between these quotes (it ends with /exec) */
 try{SHEET_URL=SHEET_URL||(parent!==window&&parent.SPIC_SHEET_URL)||''}catch(e){}SHEET_URL=SHEET_URL||window.SPIC_SHEET_URL||'';
 var $=function(s){return document.querySelector(s)};
 var DOM=['Technical','Club Outreach','Documentation','Designing and Editing','External Collaboration','Startups','social media','Management','Not sure yet'];
